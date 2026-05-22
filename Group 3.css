@@ -1,0 +1,183 @@
+@font-face {
+  font-family: adel;
+  src: url("fonts/adel.otf");
+}
+
+@font-face {
+  font-family: kidpop;
+  src: url("fonts/kidpop.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F6F7EF;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #B97D7C;
+  position: sticky;
+  top: 0;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Squada One', sans-serif;
+  color: #0A3323;
+  letter-spacing: 2px;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  gap: 20px;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: #0A3323;
+  transition: 0.3s;
+}
+
+.navlinks li a:hover {
+  color: #F2EEE8;
+}
+
+.header {
+  padding: 80px 20px 80px;
+  background-image: url("group.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin: 10px 0;
+  color: #F2EEE8;
+}
+
+.header h3 {
+  font-weight: 300;
+  color: #F2EEE8;
+}
+
+.line {
+  width: 200px;
+  margin: 10px auto;
+  border: 1px solid #F2EEE8;
+}
+
+.sec {
+  padding: 20px;
+  background-color: #B97D7C;
+  font-size: 18px;
+}
+
+.sec h4 {
+  color: #F6F7EF;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.theteam {
+  padding: 50px 20px;
+  background-color: #ABB9AC;
+}
+
+.lin {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  background-color: #B97D7C;
+}
+
+.theteam h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: adel;
+  color: #0A3323;
+}
+
+.theteam div {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+}
+
+.theteam img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0A3323;
+  transition: 0.3s;
+}
+
+.theteam img:hover {
+  transform: scale(1.1);
+}
+
+.theteam p {
+  margin-top: 8px;
+  font-family: kidpop;
+  color: #0A3323;
+}
+
+.ourproj {
+  padding: 50px 20px;
+  align-items: center;
+  background-color: #ABB9AC;
+}
+
+.ourproj h4 {
+  font-size: 30px;
+  font-family: adel;
+  margin-bottom: 20px;
+  color: #0A3323;
+}
+
+.ourproj p {
+  font-family: kidpop;
+  color: #0A3323;
+}
+
+.Lab1, .Lab2 {
+  display: inline-block;
+  margin: 15px;
+}
+
+.ourproj img {
+  width: 180px;
+  height: 120px;
+  background: #333;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #0A3323;
+}
+
+footer {
+  margin-top: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B97D7C;
+  gap: 20px
+}
+
+footer p {
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #0A3323;
+}

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffb6d9, #ffd6e8, #fff0f5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* FORM CARD */
+.container {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* OUTPUT CARD */
+.card {
+    width: 350px;
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #ff1493;
+    margin-bottom: 20px;
+}
+
+/* LABEL */
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #c2185b;
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 14px;
+    border: 2px solid #ffd1e8;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.3s;
+    background: white;
+}
+
+input:focus, select:focus {
+    border-color: #ff4fa3;
+    box-shadow: 0 0 8px rgba(255, 79, 163, 0.3);
+}
+
+/* INLINE RADIO/CHECKBOX */
+.inline {
+    width: auto;
+    margin-right: 6px;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* BUTTONS */
+button, input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+button {
+    background: linear-gradient(135deg, #ff4fa3, #ff1493);
+    color: white;
+}
+
+input[type="reset"] {
+    background: #ffe0ec;
+    color: #c2185b;
+}
+
+button:hover, input[type="reset"]:hover {
+    transform: scale(1.03);
+}
+
+/* OUTPUT TEXT */
+p {
+    text-align: left;
+    margin: 8px 0;
+    color: #333;
+}
+
+b {
+    color: #c2185b;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Web Page | Group Project</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Amatic SC', cursive;
+      font-size: 22px;
+      background-color: #f0f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2563EB;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1e4fbf;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: #2563EB;
+      margin: 25px 0 10px;
+      font-weight: 700;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .member-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .motto {
+      font-style: italic;
+      color: #555;
+      margin: 10px 0;
+      font-weight: 400;
+    }
+
+    a {
+      color: #2563EB;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* LOGIN SYSTEM STYLES */
+    .login-section, .register-section {
+      background: #e8f4f8;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      max-width: 450px;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .login-section h2, .register-section h2 {
+      color: #2563EB;
+      margin-bottom: 20px;
+    }
+
+    form h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    label {
+      font-size: 16px;
+      color: #555;
+      display: block;
+      text-align: left;
+      margin-left: 5%;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      background-color: #2563EB;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 90%;
+      font-family: 'Amatic SC', cursive;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #1e4fbf;
+    }
+
+    img {
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1 style="color:white; font-size: 40px;">WS 101 | Group Project</h1>
+  <p>Introduction to Web Technologies - Pateros Technological College</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#login">Login</a>
+  <a href="#register">Register</a>
+  <a href="#members">Members</a>
+  <a href="#about">About</a>
+</nav>
+
+<div class="container" id="home">
+
+  <!-- ✅ LOGIN SYSTEM -->
+  <section id="login" class="login-section">
+    <h2>Login System</h2>
+    <form>
+      <h3>Login to your Account</h3>
+      <label>Email Address</label><br>
+      <input type="email" placeholder="Enter your email" required><br>
+
+      <label>Password</label><br>
+      <input type="password" placeholder="Enter your password" required><br>
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+
+  <!-- ✅ REGISTRATION FORM -->
+  <section id="register" class="register-section">
+    <h2>Registration Form</h2>
+    <form>
+      <label>Name</label><br>
+      <input type="text" placeholder="Enter full name" required><br>
+
+      <label>Email</label><br>
+      <input type="email" placeholder="Enter email address" required><br>
+
+      <label>Password</label><br>
+      <input type="password" placeholder="Create password" required><br>
+
+      <label>Birthday</label><br>
+      <input type="date"><br>
+
+      <label>Age</label><br>
+      <input type="number" placeholder="Enter age" min="1" max="120"><br>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </section>
+
+
+  <!-- ✅ GROUP MEMBERS SECTION -->
+  <section id="members">
+
+    <div class="member-card">
+      <h1>Kayla Cuenco</h1>
+      <p>Hi! My Name is Kayla Cuenco from East Rembo, Taguig City. I am a student at Pateros Technological College (PTC) under the subject WS 101 – Introduction to Web Technologies.</p>
+      <p>I enjoy watching movies, playing online games, and going for a run every morning to stay active.</p>
+      <p class="motto">"Kapag ayaw, may dahilan. Kapag gusto, ako na lang." – Yearner Master</p>
+      <p>
+        <a href="https://github.com/KaylaCuenco" target="_blank">GitHub</a> |
+        <a href="mailto:kacuenco@paterostechnologicalcollege.edu.ph">Email</a>
+      </p>
+    </div>
+
+
+    <div class="member-card">
+      <h1>Gerecho Mendoza Yapla</h1>
+      <p>Greetings Ladies and Gentlemen. My Name is Gerecho M. Yapla from West Rembo, Taguig City. I'm currently enrolled in Pateros Technological College commonly known as PTC. This is my first Web Page under the subject, Introduction to Web Technologies, subject code "WS 101".</p>
+      <p>What can I say about myself? Last year I finished my HUMSS Senior High School as a Balik Aral after dropping out in Pandemic, and now I returned to finish my College Education in hopes of better future.</p>
+      <p class="motto">"For though the righteous fall seven times, they rise again, but the wicked stumble when calamity strikes." – Proverbs 24:16</p>
+      <p>
+        <a href="https://github.com/gmyapla-ptc" target="_blank">GitHub</a> |
+        <a href="mailto:gmyapla@paterostechnologicalcollege.edu.ph">Email</a>
+      </p>
+    </div>
+
+
+    <div class="member-card">
+      <h1>John Christopher Amido</h1>
+      <p>Greetings Ladies and Gentlemen. My Name is John Christopher B. Amido from Bagumbayan, Taguig City. I'm currently enrolled in Pateros Technological College commonly known as PTC. This is my first Web Page under the subject, Introduction to Web Technologies, subject code "WS 101".</p>
+      <p>What can I say about myself? I'm someone who's passionate about teamwork and loves finding efficient ways to get things done. When I'm not working, I enjoy playing online games and also cooking.</p>
+      <p class="motto">"Try Again. Fail again. Fail better." – Samuel Beckett</p>
+      <p>
+        <a href="https://github.com/callmecrisscross" target="_blank">GitHub</a> |
+        <a href="mailto:jbamido@paterostechnologicalcollege.edu.ph">Email</a>
+      </p>
+    </div>
+
+
+    <div class="member-card">
+      <h1>Robin J. Cristobal</h1>
+      <p>Greetings Ladies and Gentlemen. My Name is Robin Cristobal from Calzada Tipas Taguig City. I'm currently enrolled in Pateros Technological College commonly known as PTC. This is my first Web Page under the subject, Introduction to Web Technologies, subject code "WS 101".</p>
+      <p>What can I say about myself? I like Playing Online Games, listening musics, watching action movies and anime, and I like learning new things.</p>
+      <p class="motto">"When the time is right, I, the Lord, will make it happen." – Isaiah 60:22</p>
+      <p>
+        <a href="https://github.com/CristobalRobinJ" target="_blank">GitHub</a> |
+        <a href="mailto:rjcristobal@paterostechnologicalcollege.edu.ph">Email</a>
+      </p>
+    </div>
+
+
+    <div class="member-card">
+      <h1>Justin R. Molar</h1>
+      <p>Good day everyone! My name is Justin R. Molar from Napindan, Taguig City. I am currently studying at Pateros Technological College (PTC). This web page is created for our subject Introduction to Web Technologies (WS 101).</p>
+      <p>I am a motivated and hardworking person who enjoys learning new things, especially about technology and improving my skills. During my free time, I enjoy playing online games, listening to music, and exploring new tech trends.</p>
+      <p class="motto">"Use your imagination to create a masterpiece."</p>
+      <p>
+        <a href="https://github.com/justinmolar921-cpu/jxsvt1n" target="_blank">GitHub</a> |
+        <a href="mailto:jrmolar@paterostechnologicalcollege.edu.ph">Email</a>
+      </p>
+    </div>
+
+
+    <div class="member-card">
+      <h1>Jordan B. Peralta</h1>
+      <p>Greetings Ladies and Gentlemen. My Name is Jordan B. Peralta from Pateros Sta. Ana I'm currently enrolled in Pateros Technological College commonly known as PTC. This is my first Web Page under the subject, Introduction to Web Technologies, subject code "WS 101".</p>
+      <p>What can I say about myself? I'm someone who likes teamworks and loves finding efficient ways to get things done. When I'm not busy, I enjoy cycling outdoor activities and also cooking.</p>
+      <p class="motto">"Try Again. Fail again. Fail better." – Samuel Beckett</p>
+      <p>
+        <a href="https://github.com/callmejorgejordzz" target="_blank">GitHub</a> |
+        <a href="mailto:jbperalta@paterostechnologicalcollege.edu.ph">Email</a>
+      </p>
+    </div>
+
+  </section>
+
+
+  <center>
+    <!-- ✅ FIXED IMAGE LINK - NOW WORKING -->
+    <img src="https://raw.githubusercontent.com/callmecrishie-sketch/Lab1_AmidoJohnChristopher/main/IMG_20260226_172845.png" alt="Group Image" width="300">
+    <p>Reference: <a href="https://pin.it/7ammi661C" target="_blank">https://pin.it/7ammi661C</a></p>
+  </center>
+
+</div>
+
+
+<footer>
+  <p>© 2026 WS 101 Group | Pateros Technological College</p>
+</footer>
+
+</body>
+</html>

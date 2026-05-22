@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f5;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+/* HEADER */
+header{
+    background: #ffc0cb;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+/* TITLE */
+h1{
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav{
+    background: #ffd6e0;
+    padding: 15px;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #b03060;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ff69b4;
+}
+
+/* SECTIONS */
+section{
+    padding: 40px 20px;
+}
+
+/* ABOUT CARDS */
+#about div{
+    background: white;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* IMAGES */
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffc0cb;
+    margin-top: 15px;
+}
+
+/* HEADINGS */
+h1, h2, h3{
+    color: #d63384;
+    font-family: 'Playfair Display', serif;
+}
+
+/* LINKS */
+a{
+    color: #d63384;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #ff69b4;
+}
+
+/* CONTACT */
+#contact{
+    background: #ffe4ec;
+    text-align: center;
+}
+
+/* MESSAGE SECTION */
+#message{
+    background: #fff5f8;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* FORM */
+#message form{
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* INPUTS */
+#message input[type="text"],
+#message textarea{
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #ffc0cb;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TEXTAREA */
+#message textarea{
+    height: 120px;
+    resize: none;
+}
+
+/* INPUT FOCUS */
+#message input[type="text"]:focus,
+#message textarea:focus{
+    border-color: #ff69b4;
+}
+
+/* BUTTON */
+#message input[type="submit"]{
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+#message input[type="submit"]:hover{
+    background: #d63384;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background: #ffc0cb;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
